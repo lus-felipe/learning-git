@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;700;800&display=swap");
+
+/* Other imports */
+@import url(sections/header.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,9 +11,29 @@
 }
 
 :root {
+  /* FONTS */
+  --Playfair-Display: "Playfair Display", sans-serif;
+  --Plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
+
+  /* COLORS */
   --blue-color: #3c87ff;
 }
 
 body {
+  font-family: var(--Plus-Jakarta-Sans);
+
   background-color: var(--blue-color);
+}
+
+button {
+  font-family: inherit;
+}
+
+.todo {
+  background-color: #fff;
+  max-width: 405px;
+  margin: 135px auto;
+  border-radius: 5px;
+  padding: 25px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

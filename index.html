@@ -5,10 +5,49 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- IconScout -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
     <title>Vite App</title>
   </head>
   <body>
-    <div class="todo"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="todo">
+      <div class="todo__header">
+        <img
+          src="assets/clipboard-notes.svg"
+          class="todo__icon"
+          alt="notes icon"
+        />
+        <input
+          type="text"
+          class="todo__input"
+          name=""
+          id=""
+          placeholder="Enter a new task"
+        />
+      </div>
+      <div class="todo__controls">
+        <div class="todo__filters">
+          <span id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="todo__clear-all-btn">Clear All</button>
+      </div>
+      <ul class="todo__task-box">
+        <li class="todo__task">
+          <label for="">
+            <input type="checkbox" name="" id="" />
+            <p>The first task</p>
+          </label>
+          <div class="todo__task__options">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
