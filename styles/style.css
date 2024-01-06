@@ -3,6 +3,8 @@
 
 /* Other imports */
 @import url(sections/header.css);
+@import url(sections/controls.css);
+@import url(sections/tasks.css);
 
 * {
   box-sizing: border-box;
@@ -35,5 +37,5 @@ button {
   margin: 135px auto;
   border-radius: 5px;
   padding: 25px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
 }

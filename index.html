@@ -15,14 +15,10 @@
   <body>
     <div class="todo">
       <div class="todo__header">
-        <img
-          src="assets/clipboard-notes.svg"
-          class="todo__icon"
-          alt="notes icon"
-        />
+        <img src="assets/subject.svg" class="todo__icon" alt="notes icon" />
         <input
           type="text"
-          class="todo__input"
+          class="todo__input-text"
           name=""
           id=""
           placeholder="Enter a new task"
@@ -30,20 +26,20 @@
       </div>
       <div class="todo__controls">
         <div class="todo__filters">
-          <span id="all">All</span>
-          <span id="pending">Pending</span>
-          <span id="completed">Completed</span>
+          <span id="all" class="todo__filter todo__filter--active">All</span>
+          <span id="pending" class="todo__filter">Pending</span>
+          <span id="completed" class="todo__filter">Completed</span>
         </div>
-        <button class="todo__clear-all-btn">Clear All</button>
+        <button class="todo__clear-btn">Clear All</button>
       </div>
       <ul class="todo__task-box">
         <li class="todo__task">
-          <label for="">
-            <input type="checkbox" name="" id="" />
-            <p>The first task</p>
+          <label for="" class="todo__label">
+            <input type="checkbox" name="" id="" class="todo__input-checkbox" />
+            <p class="todo__task-text">The first task</p>
           </label>
-          <div class="todo__task__options">
-            <i class="uil uil-ellipsis-h"></i>
+          <div class="todo__options">
+            <i class="uil uil-ellipsis-h todo__options-icon"></i>
           </div>
         </li>
       </ul>

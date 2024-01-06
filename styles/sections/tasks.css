@@ -1,0 +1,19 @@
+.todo__task-box {
+  list-style: none;
+  padding: 17px 25px;
+}
+
+.todo__label {
+  display: flex;
+  align-items: center;
+}
+
+.todo__input-checkbox {
+  margin-right: 12px;
+}
+
+.todo__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
