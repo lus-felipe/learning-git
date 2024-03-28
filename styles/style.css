@@ -19,12 +19,13 @@
 
   /* COLORS */
   --blue-color: #3c87ff;
+  --red: #b1454a;
 }
 
 body {
   font-family: var(--Plus-Jakarta-Sans);
 
-  background-color: var(--blue-color);
+  background-color: var(--red);
 }
 
 button {
