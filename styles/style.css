@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;700;800&display=swap");
 
@@ -10,33 +11,35 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--Poppins);
 }
 
 :root {
   /* FONTS */
   --Playfair-Display: "Playfair Display", sans-serif;
   --Plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
+  --Poppins: "Poppins", sans-serif;
 
   /* COLORS */
   --blue-color: #3c87ff;
   --red: #b1454a;
 }
 
-body {
-  font-family: var(--Plus-Jakarta-Sans);
-
-  background-color: var(--red);
+html {
+  font-size: 100%;
 }
 
-button {
-  font-family: inherit;
+body {
+  background-color: var(--red);
+
+  font-size: 1.1rem;
 }
 
 .todo {
   background-color: #fff;
-  max-width: 405px;
-  margin: 135px auto;
+  max-width: 27rem;
+  margin: 10% auto;
   border-radius: 5px;
-  padding: 25px 0;
+  padding: 25px 0 0 0;
   box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
 }

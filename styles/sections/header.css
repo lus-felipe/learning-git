@@ -7,11 +7,13 @@
 .todo__icon {
   position: absolute;
   top: 50%;
-  transform: translate(17px, -50%);
-  width: 24px;
-  height: 24px;
+  left: 0;
+  transform: translate(41px, -50%);
+  height: 25px;
   object-fit: contain;
   opacity: 0.8;
+  fill: #999;
+  transition: fill 0.4s;
 }
 
 .todo__input-text {
@@ -21,10 +23,19 @@
   border-radius: 5px;
   outline: none;
   border: 1px solid #999;
+  transition: border 0.4s;
 
-  font-size: 1.09rem;
+  font-size: 1.2rem;
 }
 
 .todo__input-text::placeholder {
   color: #ccc;
+}
+
+.todo__input-text:focus {
+  border: 1px solid var(--red);
+}
+
+.todo__input-text:focus ~ .todo__icon {
+  fill: var(--red);
 }

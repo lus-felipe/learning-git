@@ -10,12 +10,11 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <title>Vite App</title>
+    <title>Todo List App</title>
   </head>
   <body>
     <div class="todo">
       <div class="todo__header">
-        <img src="assets/subject.svg" class="todo__icon" alt="notes icon" />
         <input
           type="text"
           class="todo__input-text"
@@ -23,6 +22,16 @@
           id=""
           placeholder="Enter a new task"
         />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          id="subject"
+          class="todo__icon"
+        >
+          <path
+            d="M13,16H3a1,1,0,0,0,0,2H13a1,1,0,0,0,0-2ZM3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,3H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"
+          ></path>
+        </svg>
       </div>
       <div class="todo__controls">
         <div class="todo__filters">
@@ -34,8 +43,13 @@
       </div>
       <ul class="todo__task-box">
         <li class="todo__task">
-          <label for="" class="todo__label">
-            <input type="checkbox" name="" id="" class="todo__input-checkbox" />
+          <label for="1" class="todo__label">
+            <input
+              type="checkbox"
+              name=""
+              id="1"
+              class="todo__input-checkbox"
+            />
             <p class="todo__task-text">The first task</p>
           </label>
           <div class="todo__options">
